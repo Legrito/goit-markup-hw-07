@@ -650,7 +650,7 @@ address {
   letter-spacing: 0.03em;
   border-radius: 4px;
   color: #212121;
-  background-color: var(--secondary-accent-color);
+  background-color: #f5f4fa;
   transition-property: all;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -762,7 +762,7 @@ header .flex {
   padding: 25px 100px;
   justify-content: center;
   align-items: center;
-  background-color: var(--secondary-accent-color);
+  background-color: #f5f4fa;
   border-radius: 4px;
 }
 
@@ -827,7 +827,7 @@ header .flex {
 /* Стили секции "Команда" */
 .team.section {
   padding-bottom: 94px;
-  background-color: var(--secondary-accent-color);
+  background-color: #f5f4fa;
 }
 
 .team-member {
