@@ -42,8 +42,7 @@ body {
 h1,
 h2,
 h3 {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 a {
@@ -143,15 +142,12 @@ address {
   border-radius: 2px;
 }
 
-.site-nav .link:hover::after,
-.site-nav .link:focus::after,
-.site-nav .link.current::after {
+.site-nav .link:hover::after, .site-nav .link:focus::after, .site-nav .link.current::after {
   display: flex;
   align-items: baseline;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link:hover, .site-nav .link:focus {
   color: #2196f3;
   outline-color: #2196f3;
 }
@@ -518,6 +514,10 @@ address {
   margin-right: 10px;
 }
 
+.footer .social-icon {
+  fill: #ffffff;
+}
+
 .social.link {
   display: flex;
   align-items: center;
@@ -531,8 +531,7 @@ address {
   transition-delay: 0;
 }
 
-.social.link:hover,
-.social.link:focus {
+.social.link:hover, .social.link:focus {
   background-color: #2196f3;
   outline-color: #2196f3;
 }
@@ -547,8 +546,10 @@ address {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer .social-icon {
-  fill: #ffffff;
+.footer .social.link:hover,
+.footer .social.link:focus {
+  background-color: #2196f3;
+  outline-color: #2196f3;
 }
 
 .footer .social-list {
@@ -560,12 +561,6 @@ address {
 
 .footer .social-list > li:not(:last-child) {
   margin-right: 10px;
-}
-
-.footer .social.link:hover,
-.footer .social.link:focus {
-  background-color: #2196f3;
-  outline-color: #2196f3;
 }
 
 .footer .social-list-wrap {
@@ -841,11 +836,6 @@ header .flex {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list.list {
-  margin-left: -30px;
-  margin-top: -30px;
-}
-
 .team-member .name {
   margin-top: 30px;
   font-size: 16px;
@@ -862,6 +852,11 @@ header .flex {
   line-height: 1.188;
 }
 
+.team-list.list {
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
 /* Стили секции Постоянные клиенты */
 .clients.section {
   padding-bottom: 94px;
@@ -873,6 +868,12 @@ header .flex {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
+}
+
+.client-icon:hover .client-icon,
+.client-icon:focus .client-icon {
+  fill: #2196f3;
+  outline-color: #2196f3;
 }
 
 .clients-link {
@@ -889,15 +890,8 @@ header .flex {
   transition-delay: 0;
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients-link:hover, .clients-link:focus {
   border-color: #2196f3;
-  outline-color: #2196f3;
-}
-
-.clients-link:hover .client-icon,
-.clients-link:focus .client-icon {
-  fill: #2196f3;
   outline-color: #2196f3;
 }
 
