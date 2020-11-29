@@ -1,0 +1,55 @@
+.submit-container {
+  margin: 0;
+}
+.footer .submit-wrap {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  margin-top: 20px;
+}
+
+.submit {
+  display: flex;
+}
+
+.submit-mail {
+  margin: 0;
+  margin-right: 12px;
+  padding: 15px;
+  width: 358px;
+  height: 50px;
+  font-family: Roboto, sans-serif;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: $dark-background-color;
+  color: $white-color;
+}
+
+.submit-mail::placeholder {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-submit {
+  display: inline-block;
+  padding-left: 29px;
+  padding-right: 28px;
+  min-width: 200px;
+}
+
+.btn-submit-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit-icon {
+  fill: currentColor;
+  margin-left: 10px;
+}
